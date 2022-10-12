@@ -1,0 +1,22 @@
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+ }
+
+.spinner-container{
+    width: 100px;
+    height: 100px;
+    margin: 100px;
+    border-bottom: 10px dotted rgb(0, 204, 255);
+    border-top: 10px dotted rgb(111, 201, 142);
+    border-left: 10px dotted rgb(233, 49, 7);
+    border-right: 10px dotted rgb(233, 49, 7);
+    border-radius: 50%;
+    position: absolute;
+    /* z-index: 1; */
+    animation:spinner 1.5s infinite linear
+}
