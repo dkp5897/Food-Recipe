@@ -1,7 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Loading from "../Container/Loading";
-import RecipeCards from "../Container/RecipeCards";
 import Cards from "./Cards";
 
 function Home() {

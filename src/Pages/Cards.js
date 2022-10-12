@@ -1,14 +1,10 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import React, {  useEffect, useState } from "react";
 import "./Cards.css"
 
 const RecipeCards=() => {
 
-    // const food = ['rice','mango','apple']
-    // const [getFood,setFood] = useState('')
     const [getRecipes, setReipes] = useState([]);
-    // const randomNum = Math.floor(Math.random()*food.length)
-    // setFood(food[randomNum])
 
     const Id = `5a25e98c`;
     const Key = "4bde6ba46c6550064a2f06008db2b33e";
