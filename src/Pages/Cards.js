@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, {  useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./Cards.css"
 
 const RecipeCards=() => {
@@ -19,9 +19,8 @@ const RecipeCards=() => {
     }
 
 
-    useEffect(()=>{
+
         getData()
-    },[])
 
   return (
     <div className="recipeconatiner">

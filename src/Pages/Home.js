@@ -39,7 +39,7 @@ function Home() {
                     to="/main"
                     role="button"
                   >
-                    Explore Now
+                    Explore More
                   </Link>
                 </p>
               </div>
@@ -68,7 +68,7 @@ function Home() {
                     to="/main"
                     role="button"
                   >
-                    Explore Now
+                    Explore More
                   </Link>
                 </p>
               </div>
@@ -97,7 +97,7 @@ function Home() {
                     to="/main"
                     role="button"
                   >
-                    Explore Now
+                    Explore More
                   </Link>
                 </p>
               </div>
