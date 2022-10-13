@@ -9,7 +9,7 @@ function Navbar() {
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark navbar">
       <NavLink className="navbar-brand" href="#">
         <h1 className="logo-heading">
-          <strong style={{color:"red", fontSize:"70px"}}>F</strong>ood<strong style={{color:"red",fontSize:"70px"}}>R</strong>ecipe
+          <strong style={{color:"red", fontSize:"50px"}}>F</strong>ood<strong style={{color:"red",fontSize:"50px"}}>R</strong>ecipe
         </h1>
       </NavLink>
       <button
@@ -25,7 +25,7 @@ function Navbar() {
       </button>
 
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul className="navbar-nav ml-auto">
+        <ul className="navbar-nav ml-auto" style={{fontSize:"25px"}} >
           <li className="nav-item active">
             <NavLink className="nav-link" to="/">
               Home <span className="sr-only">(current)</span>

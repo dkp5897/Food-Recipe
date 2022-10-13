@@ -10,13 +10,16 @@
 .spinner-container{
     width: 100px;
     height: 100px;
-    margin: 100px;
+    /* margin: 100px; */
     border-bottom: 10px dotted rgb(0, 204, 255);
     border-top: 10px dotted rgb(111, 201, 142);
     border-left: 10px dotted rgb(233, 49, 7);
     border-right: 10px dotted rgb(233, 49, 7);
     border-radius: 50%;
-    position: absolute;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     /* z-index: 1; */
-    animation:spinner 1.5s infinite linear
+    animation: spinner 1.5s infinite linear;
 }
