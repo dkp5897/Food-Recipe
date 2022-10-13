@@ -1,43 +1,69 @@
-import axios from "axios";
-import React, { useState } from "react";
-import "./Cards.css"
+// import axios from "axios";
+import React from "react";
+import "./Cards.css";
 
-const RecipeCards=() => {
+const RecipeCards = () => {
+  // const [getRecipes, setReipes] = useState([]);
 
-    const [getRecipes, setReipes] = useState([]);
+  // const Id = `5a25e98c`;
+  // const Key = "4bde6ba46c6550064a2f06008db2b33e";
+  // const url = `https://api.edamam.com/search?q=mango&app_id=${Id}&app_key=${Key}`;
 
-    const Id = `5a25e98c`;
-    const Key = "4bde6ba46c6550064a2f06008db2b33e";
-    const url = `https://api.edamam.com/search?q=mango&app_id=${Id}&app_key=${Key}`;
+  // async function getData() {
+  //   let recipeData = await axios.get(url);
+  //   console.log(recipeData.data.hits);
+  //   setReipes(recipeData.data.hits);
+  // }
 
-   
-  
-    async function getData() {
-      let recipeData = await axios.get(url);
-      console.log(recipeData.data.hits);
-      setReipes(recipeData.data.hits);
-    }
-
-
-
-        getData()
+  // useEffect(()=>{
+  //     getData()
+  // },[])
 
   return (
+     
     <div className="recipeconatiner">
-      {getRecipes.map((res,index)=>{
-        return(
-            <div className="cardsss" key={index}>
+      <div className="cardsss">
         <div className="cardss">
-         <img src={res.recipe.image} alt='recipe'/>
+          <img src="../Images/1.jpg" alt="recipe" />
           <div className="cardss__info">
-            <span className="cardss__category">{res.recipe.label}</span>
+            <span className="cardss__category">Lemon Recipe</span>
           </div>
         </div>
       </div>
-        )
-      })}
+      <div className="cardsss">
+        <div className="cardss">
+          <img src="../Images/2.jpg" alt="recipe" />
+          <div className="cardss__info">
+            <span className="cardss__category">Fruits Recipe</span>
+          </div>
+        </div>
+      </div>
+      <div className="cardsss">
+        <div className="cardss">
+          <img src="../Images/3.jpg" alt="recipe" />
+          <div className="cardss__info">
+            <span className="cardss__category">Rice Recipe</span>
+          </div>
+        </div>
+      </div>
+      <div className="cardsss">
+        <div className="cardss">
+          <img src="../Images/f2.jpg" alt="recipe" />
+          <div className="cardss__info">
+            <span className="cardss__category">Chilli Recipe - 1</span>
+          </div>
+        </div>
+      </div>
+      <div className="cardsss">
+        <div className="cardss">
+          <img src="../Images/front.jpg" alt="recipe" />
+          <div className="cardss__info">
+            <span className="cardss__category">Chilli Recipe - 1</span>
+          </div>
+        </div>
+      </div>
     </div>
   );
-}
+};
 
 export default RecipeCards;
