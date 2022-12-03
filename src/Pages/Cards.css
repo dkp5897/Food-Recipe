@@ -87,5 +87,12 @@
         grid-template-columns: 365px;
   
     }
+    .cardss img{
+      width: 200px;
+    }
+
+    .cardss{
+      width: 200px;
+    }
     
 }

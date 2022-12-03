@@ -81,3 +81,12 @@
     background-color: #363333;
     color: #fff;
   }
+
+  /* @media screen and (max-width: 840px) {
+    .card img{
+      width: 300px;
+    }
+    .card{
+      width: 303px;
+    }
+  } */
